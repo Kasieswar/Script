@@ -1,0 +1,69 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+	margin-top: 10%;
+    max-width: 500px;
+    background-color: rgba(255, 166, 0, 0.571);
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.542);
+
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: white;
+    font-size: 2em;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 1em;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    background-color: transparent;
+    color: white;
+    margin: 4%;
+}
+
+input:hover{
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.anchor{
+    background-color: black;
+    color: whitesmoke;
+    height: 40px;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 2%;
+}
+
+.dbt{
+    width: 80%;
+    padding-top: 5%;
+    text-align: right;
+}

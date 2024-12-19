@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.802);
+    width: 100%;
+    overflow-x: hidden;
+}
+
+h2{
+    color: white;
+    text-align: center;
+    padding: 3%;
+}
+
+.main{
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.account{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    
+}
+
+.account img{
+    width: 400px;
+    border-radius: 5%;
+    box-shadow: 0 3px 8px 0 white;
+}
+
+.account:hover img{
+    opacity: 0.2;
+}
+
+.account h4{
+    font-size: 1.5em;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+}
+
+.filter{
+    width: 400px;
+    height: 400px;
+    position: relative;
+}
+
+.filter img{
+    width: 400px;
+    height: 400px;
+    border-radius: 5%;
+    box-shadow: 0 3px 8px 0 white;
+}
+
+.filter:hover img{
+    opacity: 0.2;
+}
+
+.filter h4{
+    color: white;
+    font-size: 1.5em;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+}
+
+.api{
+    width: 400px;
+    height: 400px;
+}
+
+.api img{
+    width: 400px;
+    height: 400px;
+    border-radius: 5%;
+    box-shadow: 0 3px 8px 0 white;
+}
+
+.api:hover img{
+    opacity: 0.2;
+}
