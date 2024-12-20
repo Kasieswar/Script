@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+header{
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1%;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 1%;
+    border-radius: 5px;
+}
+
+header a:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+
+.bg0{
+    height: 50vh;
+    background-image: url('https://images.pexels.com/photos/5720139/pexels-photo-5720139.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.bg1{
+    height: 50vh;
+    background-image: url('https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+}
+
+.bg2{
+    height: 50vh;
+    background-image: url('https://images.pexels.com/photos/277319/pexels-photo-277319.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-caption p{
+    background-color: rgba(0, 0, 0, 0.532);
+    font-size: x-large;
+    color: white;
+}
+
+.card{
+    margin-bottom: 20px;
+}
+
+.card-img-top{
+    width: 100%;
+    height: 300px;
+}
+
+.card-body{
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-title{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.card-text{
+    font-size: 1rem;
+}
