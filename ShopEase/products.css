@@ -1,0 +1,229 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+header{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 8px 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+header a:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+
+.filter-form{
+    display: flex;
+    justify-content: center;
+    grid-area: 10px;
+    margin: 10px 0;
+}
+
+.filter-form input{
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    width: 120px;
+    margin: 5px;
+}
+
+.filter-form button{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    border-radius: 8px;
+}
+
+.filter-form button:hover{
+    background-color: orange;
+    color: black;
+}
+
+
+.carousel-inner {
+    position: relative;
+}
+
+.bg0{
+    height: 60vh;
+    background-image: url('https://images.pexels.com/photos/5720139/pexels-photo-5720139.jpeg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.bg1{
+    height: 60vh;
+    background-image: url('https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.bg2{
+    height: 60vh;
+    background-image: url('https://images.pexels.com/photos/277319/pexels-photo-277319.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.custom-icon {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+.custom-icon:hover {
+    background-color: white;
+    transform: scale(1.1);
+}
+
+.carousel-caption {
+    bottom: 20%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 1.8rem;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    backdrop-filter: blur(5px);
+    animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card{
+    margin-bottom: 20px;
+}
+
+.card-img-top{
+    width: 100%;
+    height: 300px;
+}
+
+.card-body{
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-title{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.card-text{
+    font-size: 1rem;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        text-align: center;
+        padding: 15px;
+    }
+
+    header a {
+        width: 90%;
+        text-align: center;
+        margin: 8px;
+    }
+
+    .filter-form {
+        align-items: center;
+    }
+
+    .filter-form input {
+        width: 20%;
+    }
+
+    .filter-form button {
+        width: 20%;
+    }
+
+    .bg0, .bg1, .bg2 {
+        height: 50vh; 
+    }
+
+    .carousel-caption {
+        bottom: 10%;
+    }
+
+    .carousel-caption p {
+        font-size: 1.2rem;
+        padding: 8px 15px;
+    }
+
+    .card {
+        width: 60%; 
+        margin: 0 auto 15px; 
+    }
+
+    .card-img-top {
+        height: 220px;
+    }
+
+    .card-body {
+        padding: 12px;
+    }
+
+    .card-title {
+        font-size: 0.95rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+}

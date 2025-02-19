@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    padding: 0 20px;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 500px; 
+    margin-top: 10%;
+    background-color: rgba(255, 166, 0, 0.8); 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.305); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.2); 
+}
+
+
+header h1 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+
+input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    background-color: transparent;
+    color: #fff;
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+input:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+    font-size: 1.1rem;
+}
+
+input[type="submit"]:hover {
+    transform: translateY(-2px);
+}
+
+.anchor{
+    background-color: #333;
+    color: white;
+    height: 45px;
+    width: 100%;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 45px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: block;
+}
+
+.anchor:hover{
+    background-color: #f8f9fa;
+    color: #333;
+    transform: translateY(-2px); 
+}
+
+
+.dbt {
+    color: #333;
+    font-size: 1rem;
+    margin-top: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.dbt:hover {
+    color: #f8f9fa;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    input,
+    input[type="submit"] {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .anchor {
+        font-size: 1rem;
+    }
+
+    .dbt {
+        font-size: 1rem;
+    }
+}
